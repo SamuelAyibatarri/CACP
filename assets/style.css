@@ -206,6 +206,7 @@ h4 {
     background-color: var(--background-color);
     background-blend-mode: normal;
     transition: transform 0.5s ease;
+    border: 1px solid;
 }
 
 .card1 .image {
@@ -246,6 +247,13 @@ h4 {
 
 .card:hover {
     box-shadow: 0px 5px 10px 10px rgba(100,100,100,0.05);
+    border: 0;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -547,6 +555,10 @@ h4 {
     transition: transform 0.5s ease;
 }
 
+.card-text h3 {
+    font-size: 1rem;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -591,7 +603,9 @@ h4 {
     flex-direction: row;
     gap: 0.5rem;
 }
-
+.footer p {
+    font-size: 0.8rem;
+}
 .write img{
     width: 1.5rem;
 }
